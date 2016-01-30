@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "light-server -c .lightserverrc",
+    "buildapk": "cordova build android",
+    "install-debug": "adb install -r platforms/android/build/outputs/apk/android-debug.apk"
+  },
+  "devDependencies": {
+    "light-server": "^1.1.5",
+    "q": "^1.4.1",
+    "shelljs": "^0.5.3",
+    "which": "^1.2.4"
+  },
+  "dependencies": {}
+}
