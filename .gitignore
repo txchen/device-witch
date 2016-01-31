@@ -25,3 +25,11 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+bundle.js.map
+
+.gradle
+platforms/android/.gradle/
+platforms/android/CordovaLib/build/
+platforms/android/assets/www
+platforms/android/res/xml/config.xml
