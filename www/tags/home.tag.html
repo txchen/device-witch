@@ -1,0 +1,44 @@
+<home>
+  <nav class="bar bar-tab">
+    <a class={ tab-item: true, active: currentPage == '' } href="#" data-ignore="push">
+      Label
+    </a>
+    <a class={ tab-item: true, active: currentPage == '2' } href="#2" data-ignore="push">
+      Label
+    </a>
+    <a class={ tab-item: true, active: currentPage == '3' } href="#3" data-ignore="push">
+      Label
+    </a>
+  </nav>
+  <div class="content">
+    <div if={ currentPage == '' }>
+      <ul class="table-view">
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <div class="media-body">
+              Item 1
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <div class="media-body">
+              Item 1
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+  var self = this
+  self.currentPage = ''
+  riot.route(function(id) {
+    self.currentPage = id
+    self.update()
+  })
+  </script>
+</home>
