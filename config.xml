@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.tc.dwitch" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.tc.dwitch" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Device Witch</name>
   <description>
     Shows the information of your android device.
@@ -16,11 +16,11 @@
   <allow-intent href="mailto:*" />
   <allow-intent href="geo:*" />
   <platform name="android">
-      <allow-intent href="market:*" />
+    <allow-intent href="market:*" />
   </platform>
   <platform name="ios">
-      <allow-intent href="itms:*" />
-      <allow-intent href="itms-apps:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
   </platform>
   <preference name="orientation" value="portrait" />
   <!--<preference name="Fullscreen" value="true" />-->
