@@ -27,7 +27,5 @@ build/Release
 node_modules
 
 .gradle
-platforms/android/.gradle/
-platforms/android/CordovaLib/build/
-platforms/android/assets/www
-platforms/android/res/xml/config.xml
+platforms
+plugins
